@@ -103,6 +103,17 @@ public abstract class ControllerEnvironment {
      * or an empty array if there are no controllers in this environment.
      */
     public abstract Controller[] getControllers();
+    /**
+    * Force a re-scan of the hardware
+    * This is needed to detect new or missing hardware
+    * Use cases:
+    *  1) turning on bluetooth controllers after scanning and finding it missing
+    *  2) accessing newly pluged in USB devices
+    *  3) reconnecting hardware after battery failure 
+    * Returns a list of all controllers available to this environment,
+    * or an empty array if there are no controllers in this environment.
+    */
+    public Controller[] forceRescan();
     
     /**
      * Adds a listener for controller state change events.
