@@ -22,7 +22,7 @@ ihmc {
 mainDependencies {
    api("net.java.jutils:jutils:1.0.0")
    api("org.apache.commons:commons-lang3:3.12.0")
-   api("us.ihmc:ihmc-native-library-loader:2.0.3")
+   api("us.ihmc:ihmc-native-library-loader:2.0.4")
    api("net.java.jinput:jinput-platform:2.0.6:natives-windows")
    api("net.java.jinput:jinput-platform:2.0.6:natives-osx")
    api("net.java.jinput:jinput-platform:2.0.6:natives-linux")
